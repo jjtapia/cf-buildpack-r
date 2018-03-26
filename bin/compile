@@ -46,8 +46,8 @@ BUILDPACK_DIR="$(dirname $(dirname $0))"
 # fix STACK variable if unset
 if [ -z "${STACK}" ];
 then
-  #STACK="cedar-14"
-  STACK="heroku-16"
+  STACK="cedar-14"
+  #STACK="heroku-16"
 fi
 
 # config
@@ -58,7 +58,7 @@ if [[ -f $BUILD_DIR/.r-version ]]; then
 else
   #R_VERSION="3.2.4"
   #R_VERSION="3.3.1"
-  R_VERSION=3.4.3
+  R_VERSION=3.4.0
 fi
 
 # read in buildback binary version if file exists
